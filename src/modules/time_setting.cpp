@@ -38,8 +38,8 @@ void showDateTimeSettingScreen() {
             M5.Lcd.drawString(timeStr, 160, 130);
 
             int underlineY = (selector < 3) ? 100 : 160;
-            int underlineX[] = {70, 160, 210, 80, 140, 200};
-            int underlineW[] = {80, 30, 30, 30, 30, 30};
+            int underlineX[] = {70, 160, 210, 88, 140, 197};
+            int underlineW[] = {70, 30, 30, 30, 30, 30};
             M5.Lcd.drawLine(underlineX[selector], underlineY,
                             underlineX[selector] + underlineW[selector], underlineY,
                             GREEN);
