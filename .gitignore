@@ -42,5 +42,5 @@
 
 
 .pio
-.vscode/*
+.vscode
 .DS_Store
