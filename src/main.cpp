@@ -98,14 +98,6 @@ void loop() {
     }
 
     
-    if (currentDisplayMode == MODE_OCTAVE_BAND && csvLoggingEnabled) {
-        unsigned long now = millis();
-        if (now - lastSaveTime >= SAVE_INTERVAL_MS) {
-            saveLeqToCSV(leqResults);
-            lastSaveTime = now;
-        }
-    }
-    
     if (M5.BtnC.wasPressed()) {
         if (currentDisplayMode == MODE_OCTAVE_BAND) {
             // B画面でCボタン：CSV保存を停止
